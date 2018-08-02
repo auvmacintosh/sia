@@ -1,4 +1,4 @@
-package spittr.config;
+package qly.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -11,7 +11,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan("spittr.web")
+@ComponentScan(basePackages = {"qly.web"})
 public class WebConfig extends WebMvcConfigurerAdapter {
 
     @Bean

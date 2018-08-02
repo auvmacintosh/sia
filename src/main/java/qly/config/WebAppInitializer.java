@@ -1,9 +1,9 @@
-package spittr.config;
+package qly.config;
 
 import org.springframework.web.servlet.support.
         AbstractAnnotationConfigDispatcherServletInitializer;
 
-public class SpittrWebAppInitializer
+public class WebAppInitializer
         extends AbstractAnnotationConfigDispatcherServletInitializer {
     @Override
     protected String[] getServletMappings() {
@@ -12,7 +12,7 @@ public class SpittrWebAppInitializer
 
     @Override
     protected Class<?>[] getRootConfigClasses() {
-        return new Class<?>[] {RootConfig.class};
+        return new Class<?>[] {RepoConfig.class};
     }
 
     @Override
